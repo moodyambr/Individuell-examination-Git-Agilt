@@ -32,7 +32,8 @@
   - Given: <https://github.com/VitaliyBeletskiy/mu25-git-agile-bookmarks-mini/pull/4#pullrequestreview-3417595362>  
   - Given: <https://github.com/sofianiyazson/versionshantering-exam/pull/6#pullrequestreview-3422358057>  
   - Given: <https://github.com/ThatMayBeTheCase/Bookmarks-lite/pull/2>
-  - Mottagen: <PR-länk>  
+  
+  - Mottagen: <https://github.com/moodyambr/Individuell-examination-Git-Agilt/pull/1>  
   - Mottagen: <PR-länk>  
 
   - *(VG: lägg till en till given)*
