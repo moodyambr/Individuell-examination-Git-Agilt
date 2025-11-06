@@ -29,14 +29,22 @@
 - **Trello-bräda:** <https://trello.com/b/p8Kkacoy/pomodoro-timer-version-A>  
 - **Mina reviews:**  
   - Given: <https://github.com/MuamerBrankovic/bookmarks-mini/pull/3#pullrequestreview-3413467039> 
+
   - Given: <https://github.com/VitaliyBeletskiy/mu25-git-agile-bookmarks-mini/pull/4#pullrequestreview-3417595362>  
+
   - Given: <https://github.com/sofianiyazson/versionshantering-exam/pull/6#pullrequestreview-3422358057>  
+
   - Given: <https://github.com/ThatMayBeTheCase/Bookmarks-lite/pull/2>
+
+  - Given: https://github.com/s91k/mu25-individ-karlsson-simon/pull/4#pullrequestreview-3424901462
+  
   
   - Mottagen: <https://github.com/moodyambr/Individuell-examination-Git-Agilt/pull/1>  
+
+
   - Mottagen: <PR-länk>  
 
-  - *(VG: lägg till en till given)*
+
  
 ## Dela dom/bjud in till läraren: Mail: mandus85@hotmail.com, Github nickname: DutenLobarn
 
