@@ -70,4 +70,40 @@ Implementera squash merge konsekvent från första PR och använd `git rebase -i
 
 ---
 
-**Sammanfattning:** Projektet följde agil metodik med user stories, sprint planning och retrospektiv. Git-workflow förbättrades genom lärande (squash merge, clean commits). Alla VG-krav uppfyllda: 6 PR, 5 givna reviews, 2+ förbättringar dokumenterade.
+## 5) Alla Git-kommandon som använts i projektet
+
+**Grundläggande kommandon:**
+- `git init` 
+- `git status` 
+- `git add . / git add <fil>` 
+- `git commit -m "meddelande"` 
+- `git log --oneline` 
+- `git pull` 
+- `git push`
+
+**Branch-hantering:**
+- `git checkout -b <branch-name>` 
+- `git checkout <branch>` 
+- `git push -u origin <branch>` 
+
+**Avancerade operationer:**
+- `git stash / git stash pop` - Sparade/återställde ändringar temporärt
+- `git reset HEAD~1` - Ångrade commits
+- `git rebase --abort` - Avbröt rebase-operationer
+- `git merge main` - Mergade main i feature branch
+- `git restore .` - Återställde ändringar i arbetskatalogen
+
+**Inspektionskommandon:**
+- `git log --graph --oneline` - Visualiserade branch-struktur
+- `git reflog` - Visade alla git-operationer
+- `git branch -a` - Listade alla branches
+- `git diff` - Visade ändringar
+
+
+---
+
+**Sammanfattning:** Projektet följde agil metodik med user stories, sprint planning och retro. Git-workflow förbättrades genom lärande (squash merge, clean commits). Alla VG-krav uppfyllda: 6 PR, 6 givna reviews, 3 förbättringar dokumenterade.
+
+---
+
+
