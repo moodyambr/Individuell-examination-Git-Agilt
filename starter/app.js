@@ -1,15 +1,17 @@
-const WORK_SECONDS = 25 * 60; // 25 minutes
-const BREAK_SECONDS = 5 * 60;  // 5 minutes
+const WORK_SECONDS = 0.25 * 60; // 15 seconds for testing
+const BREAK_SECONDS = 0.05 * 60;  // 5 seconds for testing
 
 let remaining = WORK_SECONDS;
 let isWork = true;
 let intervalId = null;
+let sessionCount = 0; // Track completed work sessions
 
 const timeEl = document.getElementById('time');
 const modeEl = document.getElementById('mode');
 const startBtn = document.getElementById('startBtn');
 const pauseBtn = document.getElementById('pauseBtn');
 const resetBtn = document.getElementById('resetBtn');
+const sessionCountEl = document.getElementById('sessionCount');
 
 // Format seconds to MM:SS display
 function formatTime(sec){
@@ -22,6 +24,7 @@ function formatTime(sec){
 function updateUI(){
   timeEl.textContent = formatTime(remaining);
   modeEl.textContent = isWork ? 'Arbete' : 'Paus';
+  sessionCountEl.textContent = sessionCount;
   startBtn.disabled = !!intervalId;
   pauseBtn.disabled = !intervalId;
 }
@@ -36,6 +39,7 @@ function tick(){
 
   // Switch between work and break when timer reaches 0
   if (isWork){
+    sessionCount += 1; // Increment completed sessions
     isWork = false;
     remaining = BREAK_SECONDS;
   } else {
@@ -48,7 +52,7 @@ function tick(){
 // Start the timer
 function startTimer(){
   if (intervalId) return;
-  intervalId = setInterval(tick, 1000);
+  intervalId = setInterval(tick, 1000);// Call tick every second
   updateUI();
 }
 
@@ -65,6 +69,7 @@ function resetTimer(){
   pauseTimer();
   isWork = true;
   remaining = WORK_SECONDS;
+  sessionCount = 0; // Reset session counter
   updateUI();
 }
 
