@@ -26,7 +26,7 @@
 
 
     ## Länkar (fyll i)
-- **Trello-bräda:** <https://trello.com/b/p8Kkacoy/final-production-board>  
+- **Trello-bräda:** <https://trello.com/b/p8Kkacoy/pomodoro-timer-version-A>  
 - **Mina reviews:**  
   - Given: <https://github.com/MuamerBrankovic/bookmarks-mini/pull/3#pullrequestreview-3413467039> 
   - Given: <https://github.com/VitaliyBeletskiy/mu25-git-agile-bookmarks-mini/pull/4#pullrequestreview-3417595362>  
