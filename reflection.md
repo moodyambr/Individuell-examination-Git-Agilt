@@ -1,43 +1,73 @@
-# Reflektion – Git & Agilt (1–2 sidor)
+# Reflektion – Git & Agilt
 
-## 1) Egen user story + Acceptance Criteria + INVEST
+## 1) User Story + Acceptance Criteria + INVEST
 
-**Story:** Som användare vill jag se hur många Pomodoro-pass jag genomfört så att jag kan spåra min produktivitet.
+**User Story:** US4 - Session-räknare
+Som användare vill jag se antal avslutade arbetspass så att jag kan följa min produktivitet.
 
-**Acceptance Criteria (checkboxar):**
+**Acceptance Criteria:**
 - [x] Session-räknare visas i UI och startar på 0
 - [x] Räknaren ökar med 1 när 25-minuters arbetsperiod avslutas
 - [x] Räknaren nollställs när användaren klickar återställ-knappen
-- [x] Räknaren påverkas inte av pausperioder
+- [x] Räknaren påverkas inte av pausperioder (5 min)
 
-**INVEST – kort motivering (2–4 meningar):**
-Vilka av I, N, V, E, S, T uppfyller storyn och varför?
+**INVEST-motivering:**
 - **I**ndependent: Kan implementeras oberoende av andra features
-- **N**egotiable: Kan diskutera var räknaren visas eller om den ska sparas
-- **V**aluable: Ger användaren insikt i produktivitet och motivation
-- **E**stimable: Enkel att uppskatta 
-- **S**mall: Liten feature som passar i en sprint
-- **T**estable: Enkelt att testa genom att köra timer och räkna pass  
+- **N**egotiable: Placeringen i UI kan diskuteras, sparning i localStorage valfritt
+- **V**aluable: Ger användaren insikt i produktivitet och motivation att fortsätta
+- **E**stimable: 2-3 timmar (enkelt att uppskatta)
+- **S**mall: Liten feature som passar i en sprint, ~50 rader kod
+- **T**estable: Testa genom att köra timer och verifiera räkning
 
-## 2) Sprintmål + Definition of Done (DoD)
-**Sprintmål:** Skapa en fungerande Pomodoro-timer med HTML-struktur, CSS-styling, timer-logik och session-räkning för att hjälpa användare att följa 25/5-minuters produktivitetsmetoden.
+## 2) Sprintmål + Definition of Done
 
-**DoD (checklista):**
+**Sprintmål:** 
+Skapa en fungerande Pomodoro-timer med grundläggande funktionalitet (25/5 min cykler, start/paus/återställ, session-räkning) för att hjälpa användare följa produktivitetsmetoden.
+
+**Definition of Done:**
 - [x] Kod kör lokalt utan fel
 - [x] PR granskad och godkänd (minst 1 review)
-- [x] README uppdaterad med valt case
-- [x] Issue/kort länkat och stängt vid merge
-- [x] Tydliga commit-meddelanden enligt policy
-- [x] Squash merge använt för clean historik
+- [x] README uppdaterad med projektinfo
+- [x] Trello-kort länkat och flyttat till "Done"
+- [x] Commit-meddelanden följer policy: `type(scope): beskrivning`
+- [x] Squash merge använt för clean historik i main
+- [x] Alla tester passerar (manuell testning)
 
-## 3) Retro: Start / Stop / Continue
-- **Start:** Använda squash merge konsekvent från början, lärde mig under US3 och fick mycket renare historik
-- **Stop:** Skapa flera commits för samma feature (US1 hade 3 commits) det hade skapat lite rörig historik i main
-- **Continue:** Tydliga branch-namn `feature/US#-beskrivning` och commit-meddelanden enligt `type(scope): beskrivning` format och policy
+## 3) Retrospektiv: Start / Stop / Continue
 
-**Konkret förbättring för nästa sprint:** Implementera squash merge direkt från första PR. Detta kommer skapa en renare git-historik från start och göra det lättare att följa projektets utveckling. Jag kommer också använda interactive rebase innan push för att städa commits lokalt.
+**START:**
+- Använda squash merge från början - lärde mig vid US3, resulterade i renare historik
+- Skriva tydligare PR-beskrivningar med "varför" och "hur"
 
+**STOP:**
+- Flera commits för samma feature (US1 hade 3 commits istället för 1)
+- Merge commits i main (PR#2 blev merge istället för squash)
 
-## 4) Hänvisningar (VG)
-- **Förbättring 1 - Squash merge adoption** stöds av commit f5c448e: US3 blev en enda clean commit jämfört med US1 som hade flera commits (42d6d89, 491830f, cb51326)
-- **Förbättring 2 - Semantisk HTML** stöds av commit 42d6d89: Fixade språkattribut till svenska och tog bort duplicerad body-tagg för valid HTML
+**CONTINUE:**
+- Tydliga branch-namn: `feature/US#-beskrivning`
+- Semantiska commit-meddelanden: `type(scope): beskrivning`
+- En feature per branch-strategin
+
+**Konkret förbättring för nästa sprint:**
+Implementera squash merge konsekvent från första PR och använd `git rebase -i` lokalt innan push för att städa commits. Detta ger en commit per feature i main och gör historiken lättare att följa.
+
+## 4) Hänvisningar till Förbättringar (VG)
+
+**Förbättring 1 - Squash merge adoption:**
+- Commit: `f5c448e` (US3 timer-logik)
+- Resultat: En enda clean commit jämfört med US1 som hade 3 commits (42d6d89, cb51326, 491830f)
+- Impact: Renare git-historik, enklare att förstå projektets utveckling
+
+**Förbättring 2 - Semantisk HTML och validering:**
+- Commit: `42d6d89` (HTML fixes)
+- Ändringar: Fixade `lang="sv"` istället för `en`, tog bort duplicerad `<body>`-tagg
+- Impact: Valid HTML5, bättre tillgänglighet och SEO
+
+**Förbättring 3 - Merge-konflikt hantering:**
+- PR: #5 och #6
+- Lösning: Lokal merge med `git merge`, valde version-A för konsistens
+- Dokumentation: Tydligt beskrivet i PR-kommentar (vad/hur/varför)
+
+---
+
+**Sammanfattning:** Projektet följde agil metodik med user stories, sprint planning och retrospektiv. Git-workflow förbättrades genom lärande (squash merge, clean commits). Alla VG-krav uppfyllda: 6 PR, 5 givna reviews, 2+ förbättringar dokumenterade.
