@@ -66,7 +66,7 @@ En fullt fungerande Pomodoro Timer-applikation byggd med vanilla JavaScript. Tim
 5. https://github.com/s91k/mu25-individ-karlsson-simon/pull/4#pullrequestreview-3424901462
 6. https://github.com/MuamerBrankovic/bookmarks-mini/pull/4#pullrequestreview-3427817513
 
-**Reviews mottagna (1 st):**
+**Reviews mottagna (2 st):**
 1. https://github.com/moodyambr/Individuell-examination-Git-Agilt/pull/1
 2. https://github.com/moodyambr/Individuell-examination-Git-Agilt/pull/4#pullrequestreview-3428112878
 
