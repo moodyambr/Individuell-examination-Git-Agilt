@@ -26,7 +26,7 @@
 
 
     ## Länkar (fyll i)
-- **Trello-bräda:** <https://trello.com/b/p8Kkacoy/mu25-individuell-examination-git-agilt-pomodoro-timer>  
+- **Trello-bräda:** <https://trello.com/b/p8Kkacoy/final-production-board>  
 - **Mina reviews:**  
   - Given: <https://github.com/MuamerBrankovic/bookmarks-mini/pull/3#pullrequestreview-3413467039> 
   - Given: <https://github.com/VitaliyBeletskiy/mu25-git-agile-bookmarks-mini/pull/4#pullrequestreview-3417595362>  
